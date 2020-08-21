@@ -1,7 +1,5 @@
 FROM golang:1.14
 MAINTAINER mayidudu
-ENV GOROOT /go
-COPY ./gen.sh /go/src/gen.sh
 COPY ./dudu_controller /go/src/dudu_controller
 COPY ./dudu_controller /usr/local/go/src/dudu_controller
 RUN cd /go/src \
