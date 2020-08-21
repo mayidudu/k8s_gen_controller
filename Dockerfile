@@ -7,6 +7,6 @@ RUN cd /go/src \
     && go get -u k8s.io/code-generator/...
 RUN cd /go/src/k8s.io/code-generator \
     && ./generate-groups.sh all \
-    dudu_controller/pkg/client \
-    dudu_controller/pkg/apis \
+    /go/src/dudu_controller/pkg/client \
+    /go/src/dudu_controller/pkg/apis \
     dudu:v1
